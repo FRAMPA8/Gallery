@@ -1,0 +1,124 @@
+/*obecne*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    
+}
+
+/* container */
+
+.container-slider{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+/*leva cast, barvy a texty*/
+
+.slide-left {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 35vw;
+    height: 100vh;
+    transition: 0.8s;
+}
+
+.slide-left > div {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+}
+.slide-left h2 {
+
+    font-size: 3vw;
+    
+}
+
+.color-slide1 {
+    background-color: #45A8BC;
+}
+
+.color-slide2 {
+    background-color: #2A86EA;
+}
+
+.color-slide3 {
+    background-color:  #252E33;
+}
+
+.color-slide4 {
+    background-color: #ff9306;
+}
+
+
+/*prava cast, obrazky*/
+
+.slide-right {
+    position: absolute;
+    top:0;
+    left:35vw;
+    width: 65vw;
+    height: 100vh;
+    transition: 0.8s;
+}
+
+.slide-right > div {
+
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+
+.image-1 {
+    background-image: url(./IMG/obr1.jpg);
+    
+}
+.image-2 {
+    background-image: url(./IMG/obr2.jpg);
+}
+.image-3 {
+    background-image: url(./IMG/obr3.jpg);
+}
+.image-4 {
+    background-image: url(./IMG/obr4.jpg);
+}
+
+/*ikony sipek*/
+.arrow-buttons .arrow {
+position: absolute;
+z-index: 100;
+left: 35%;
+top: 50%;
+}
+
+.arrow img {
+    width: 4vw;
+    border-radius: 0.5vw;
+}
+
+.arrow-down img {
+    transform: translate(-100%);
+}
+
+.arrow-up img {
+    transform: translate(0,-100%);
+}
+
+.arrow img:hover {
+    border: 2px solid black;
+}
